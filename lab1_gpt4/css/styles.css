@@ -469,12 +469,13 @@ p {
 .blog .all_art{
   display: flex;
   flex-direction: row;
+  
 }
 
 .blog .left_art{
   display: flex;
   flex-direction: column;
-  
+  min-width: 400px;
 }
 
 .blog .right_art{
@@ -482,12 +483,6 @@ p {
   flex-direction: row;
   flex-wrap: wrap;
   row-gap: 3rem;
-}
-
-.blog .one_main_art{
-  display: flex;
-  flex-direction: column;
-  min-width: 400px;
 }
 
 .blog .one_minor_art{
@@ -503,17 +498,24 @@ p {
   background-color: #042C54;
   padding: 2rem;
   row-gap: 1rem;
+  flex:2;
   justify-items: stretch;
 }
 
-.blog .description_art_main{
+.blog .description__art__main{
   display: flex;
   flex-direction: column;
   background-color: #042C54;
   padding: 2rem;
-  row-gap: 1rem;
+  flex: 2;
+  justify-content: space-between;
 }
 
+.blog .data__description{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
 
 
 .blog .date{
@@ -532,7 +534,7 @@ p {
   font-size: 12px;
   color: #ffffff;
   font-family: "ManropeLight";
-  padding-top: 13.4rem;
+
 }
 
 .blog .head_main_art{
