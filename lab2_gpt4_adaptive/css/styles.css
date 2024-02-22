@@ -14,6 +14,11 @@
   src: url(../fonts/Manrope-Light.ttf);
 }
 
+@font-face {
+  font-family: "ManropeExtraBold";
+  src: url(../fonts/Manrope-ExtraBold.ttf);
+}
+
 /* Сброс базовых стилей */
 
 * {
@@ -29,7 +34,6 @@
 body {
   background: #031b34;
   padding: 0 2rem;
-  overflow: auto;
 }
 
 body.oh {
@@ -147,9 +151,8 @@ p {
   background: #031b34;
 }
 
-.header .header__logo .logo__link {
-  display: flex;
-  align-items: center;
+.header .header-logo {
+  width: 162px;
 }
 
 .header .header__menu .menu {
@@ -204,6 +207,7 @@ p {
   border-bottom-color: #f49867;
 }
 
+
 .header .header__burger_menu {
   display: flex;
   flex-direction: column;
@@ -256,7 +260,7 @@ p {
   display: flex;
   justify-content: space-between;
   column-gap: 1rem;
-  /* min-height: 60vh; */
+  min-height: 60vh;
   margin: 14rem 0 3rem;
 }
 
@@ -304,8 +308,6 @@ p {
 
 .brands_section {
   display: flex;
-  flex-wrap: wrap;
-  row-gap: 2rem;
   justify-content: center;
   align-items: center;
   padding: 0 0 6rem 0;
@@ -325,7 +327,6 @@ p {
 
 .what_is_chatgpt_section .what_is_chatgpt_section__top {
   display: flex;
-  column-gap: 3rem;
 }
 
 .what_is_chatgpt_section .what_is_chatgpt_section__top .top__header {
@@ -438,6 +439,424 @@ p {
   width: 55%;
   color: #81afdd;
 }
+/* Медиа запросы для адаптива */
+
+
+.my_apps{
+  display: flex;
+  flex-direction: column;
+  row-gap: 6rem;
+  margin: 3rem 0 2rem;
+}
+
+.my_apps .up_section{
+  display: flex;
+  flex-direction: row;
+  column-gap: 3rem;
+  align-items: center;
+  
+}
+
+.my_apps .right__container{
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  padding-top: 8rem;
+  max-width: 445px;
+}
+
+.my_apps .up_section .left_cont{
+  width: 100%;
+
+}
+
+.my_apps .up_section .right__container .container__content{
+  color: #81afdd;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.my_apps .up_section .right__container .right__apps{
+  padding-top: 1rem;
+  color: #f49867;
+  border-bottom: 1px solid transparent;
+}
+.my_apps .up_section .right__container .request_not_button{
+  color: #71E5FF;
+  font-size: 16px;
+}
+
+.my_apps .down_section{
+  display: flex;
+  flex-direction: row;
+  border-radius: 10.724px;
+  border: 1px solid #000;
+  background: linear-gradient(90deg, #AE67FA 1.84%, #F49867 102.67%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  align-items: center;
+}
+
+.my_apps .down_section .right{
+  display: flex;
+  padding: 0 2rem;
+  margin-left: auto;
+  
+}
+
+.my_apps .down_section .right .black_btn{
+  font-size: 18px;
+  border: none;
+  border-radius: 40px;
+  background: #000;
+  color: #fff;
+  padding: 1rem 4rem;
+  
+}
+
+.my_apps .down_section .left{
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 2rem;
+  color:#000;
+  max-width: 600px;
+  row-gap: 1rem;
+}
+
+.my_apps .down_section .left .req_not_btn{
+  color: #000;
+}
+
+.my_apps .down_section .left .black_header{
+  -webkit-text-fill-color:#000;
+}
+
+.blog{
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
+  margin-top: 5rem;
+}
+
+.blog .header_blog{
+  display: flex;
+}
+
+.blog img{
+  width: 100%;
+}
+
+.blog .all_art{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.blog .left_art{
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+}
+
+.blog .right_art{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 3rem;
+}
+
+.blog .one_minor_art{
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+  flex: 30%;
+}
+
+.blog .description_art{
+  display: flex;
+  flex-direction: column;
+  background-color: #042C54;
+  padding: 2rem;
+  row-gap: 1rem;
+  flex:2;
+  justify-items: stretch;
+}
+
+.blog .description__art__main{
+  display: flex;
+  flex-direction: column;
+  background-color: #042C54;
+  padding: 2rem;
+  flex: 2;
+  justify-content: space-between;
+}
+
+.blog .data__description{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+
+.blog .date{
+  font-size: 12px;
+  color: #ffffff;
+  font-family: "ManropeLight";
+}
+
+.blog .read_art{
+  font-size: 12px;
+  color: #ffffff;
+  font-family: "ManropeLight";
+}
+
+.blog .read_art_main{
+  font-size: 12px;
+  color: #ffffff;
+  font-family: "ManropeLight";
+
+}
+
+.blog .head_main_art{
+  font-size: 25px;
+  font-family: "Manrope-ExtraBold", sans-serif;
+}
+
+.blog .head_minor_art{
+  font-size: 19px;
+  font-family: "Manrope-ExtraBold", sans-serif;
+}
+
+.beyond_expect{
+  display: flex;
+  align-items:flex-end;
+  width: 60%;
+  column-gap: 1.188rem;
+  margin: 1rem 0 7rem;
+}
+
+.beyond_expect .beyond_expect__right{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 0 0 2rem;
+  gap: 1em;
+}
+
+.right__small_header{
+  color: #71E5FF;
+}
+
+.right__header{
+  width: 60%;
+}
+
+.beyond_expect .beyond_expect__right .container__content{
+  color: #81AFDD;
+  line-height: 30px;
+  width: 75%;
+  
+}
+
+.beyond_expect .beyond_expect__right a{
+  color: #f49867;
+  border-bottom: 1px solid transparent;
+  
+}
+
+.beyond_expect .beyond_expect__right a:hover{
+  border-bottom: 1px solid #f49867;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+/* Регистрация */
+.registration{
+  display: flex;
+  justify-content: space-between;
+  border-radius: 11px;
+  border-color: transparent;
+  background: linear-gradient(90deg, #ae67fa 1.84%, #f49867 102.67%);
+  padding: 23px 46px 23px 41px;
+  margin: 3rem;
+}
+
+.registration .left__registration .left__cta{
+  font-size: 12px;
+  color: #0E0E0E;
+}
+
+.registration .left__registration .container__content{
+  font-size: 24px;
+  font-weight: 800;
+  color: #000000;
+  width: 50%;
+}
+
+.registration .right__registration{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registration .right__registration .registration__btn{
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  background: #000000;
+  border-radius: 40px;
+  padding: 1rem 4rem;
+}
+
+.registration .right__registration button:hover{
+background-color: #ae67fa;
+}
+
+/* Футтер */
+  
+.footer{
+  display: flex;
+  flex-direction: column;
+  background-color: #031B34;
+  padding: 196px 137px 103px;
+  row-gap: 5rem;
+  max-width: 1440px;
+  
+}
+
+.footer .footer__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .footer__header .top__header{
+  text-align: center;
+  
+}
+
+.footer .footer__middle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 180px;
+}
+
+.footer .footer__middle .early_access_btn{
+  border: 1px solid;
+  font-size: 18px;
+  border-color: #9b9b9b;
+  color: #9b9b9b;
+  background-color: transparent;
+  padding: 20px 70px;
+}
+
+.footer .footer__middle button:hover{
+  color: #000000;
+  background-color: #fff;
+  border-color: black;
+}
+
+.footer .footer__bottom{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .footer__bottom .logo{
+  flex-basis: 24%;
+} 
+
+.footer .footer__bottom .logo .GPT-3_logo{
+  padding: 0 0 23px;
+}
+
+.footer .footer__bottom_right{
+  display: flex;
+  column-gap: 12rem; 
+  justify-content: end;
+  /* flex-basis: 68%; */
+}
+
+.footer .footer__bottom .address{
+  font-size: 12px;
+  width: 68%;
+}
+
+.footer .footer__bottom .footer__bottom_right .bottom__links_header{
+  margin: 0px 0px 34px;
+  font-size: 14px;
+  text-align: start;
+  font-weight: 700;
+}
+
+.footer .footer__bottom .footer__links .footer__info_links{
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  text-align: start;
+}
+
+.footer .footer__bottom .footer__company_info .footer__company_links{
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  text-align: start;
+}
+
+.footer .footer__bottom .footer__company_header{
+  margin: 0px 0px 34px;
+  text-align: start;
+}
+
+.footer .footer__bottom .footer__contact_info{
+  width: 20%;
+}
+
+.footer .footer__bottom .footer__contact_info .footer__contact_content{
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  text-align: start;
+  
+}
+
+.footer .footer__bottom .footer__contact_info .footer__contact_header{
+  margin: 0px 0px 34px;
+  text-align: start;
+}
+
+.footer .footer__bottom .footer__bottom_right .footer__link{
+  font-size: 12px;
+  /* font-weight: 100; */
+  font-family: "ManropeLight";
+}
+
+.footer__copyright .copyright__info{
+  font-size: 12px;
+  text-align: center;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1284px) {
+  .footer .footer__bottom_right{
+    column-gap: 4rem;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+  }
+  .right__header{
+    width: 80%;
+  }
+}
 
 /* Медиа запросы для адаптива */
 
@@ -448,6 +867,7 @@ p {
 
   .header {
     padding: 2rem;
+    flex-direction: row;
   }
 
   .header .header__logo .logo__link img {
@@ -540,9 +960,86 @@ p {
   .future_here .future_here__left {
     row-gap: 1rem;
   }
+  .blog .description_art{
+    padding: 15px;
+  }
 }
 
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 999px) {
+  .my_apps .up_section {
+    
+  }
+  .my_apps .up_section .left_cont{
+    width: 100%;
+  }
+
+  .my_apps .up_section .left_cont img{
+    max-width: 380px;
+  }
+  .my_apps .right__container{
+    padding-top: 1rem;
+  }
+
+  .blog .left_art{
+    min-width: 350px;
+  }
+  .footer{
+    padding: 100px 10px 80px
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+  .footer{
+    padding: 100px 10px 20px
+  }
+  .blog .left_art{
+    min-width: 300px;
+  }
+  .footer .footer__middle{
+    margin-bottom: 0px;
+  }
+  .blog .description__art__main{
+    padding: 1rem;
+  }
+  .blog .head_main_art{
+    font-size: 18px;
+  }
+  .black_header{
+    font-size: 18px;
+  }
+  .my_apps .down_section .left{
+    padding: 1.5rem;
+  }
+
+}
+
+@media screen and (max-width: 943px) {
+  .blog .description_art{
+    padding: 10px;
+  }
+  .blog .head_minor_art{
+    font-size: 16px;
+  }
+  .blog .one_minor_art{
+    margin-left: 2rem;
+  }
+  .blog .right_art{
+    row-gap: 2rem;
+  }
+
+  .blog .left_art{
+    min-width: 300px;
+  }
+  
+}
+
+@media screen and (max-width: 885px) {
+
+  
+}
+
+@media screen and (max-width: 768px) {
   p {
     font-size: 14px;
     line-height: 1.5;
@@ -602,9 +1099,35 @@ p {
     .container__content {
     line-height: 1.5;
   }
+
+  .blog .one_minor_art{
+    margin-left: 2rem;
+  }
+  .blog .right_art{
+    row-gap: 2rem;
+  }
+
+  .blog .left_art{
+    min-width: 250px;
+  }
+
+  .blog .head_minor_art{
+    font-size: 14px;
+  }
+  
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 786px) {
+  .my_apps .up_section .left_cont img{
+    max-width: 320px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .my_apps .right__container{
+    row-gap: 1rem;
+  }
+
   a {
     font-size: 12px;
   }
@@ -644,4 +1167,138 @@ p {
   .future_here .future_here__right {
     row-gap: 2rem;
   }
+  .brands_section{
+    flex-wrap: wrap;
+    row-gap: 1rem;
+  }
 }
+
+@media screen and (max-width: 704px){
+  .blog{
+    margin-top: 10px;
+    row-gap: 2rem;
+  }
+
+  .blog .header_blog{
+  }
+
+  .my_apps{
+    row-gap: 3rem;
+  }
+  .my_apps .up_section{
+    flex-direction: column;
+  }
+  .my_apps .right__container{
+    max-width: 100%;
+  }
+  .my_apps .up_section .left_cont img{
+    width: 100%;
+  }
+  .blog .all_art{
+    flex-direction: column;
+    row-gap: 1.5rem;
+  }
+  .blog .left_art{
+  }
+
+  .blog .one_minor_art{
+    margin: 0;
+    flex: 40%;
+  }
+  .blog .right_art{
+    gap: 1rem;
+    
+  }
+
+}
+
+@media screen and (max-width: 638px){
+  .my_apps .down_section .right .black_btn{
+    font-size: 14px;
+    padding: 1rem 3rem;
+  }
+
+  .footer .footer__bottom{
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+
+  .footer .footer__bottom_right{
+    flex-direction: column;
+    row-gap: 3rem;
+  }
+
+  .footer__links{
+    align-items: baseline;
+  }
+  
+  .footer__company_info{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    align-items: baseline;
+  }
+  .footer .footer__bottom .footer__company_info .footer__company_links{
+    flex-direction: row;
+    column-gap: 0.5rem;
+  }
+  .footer__links{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+  }
+  .footer .footer__bottom .footer__links .footer__info_links{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+  }
+  .footer .footer__bottom .footer__contact_info .footer__contact_content{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+  }
+
+  .footer .footer__bottom .footer__contact_info{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    column-gap: 1rem;
+    align-items: baseline;
+  }
+
+  .footer .footer__bottom .footer__bottom_right .bottom__links_header{
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer .footer__bottom .address{
+    width: 100%;
+    column-gap: 0.5rem;
+  }
+  .footer .footer__bottom .logo .GPT-3_logo{
+
+  }
+}
+
+@media screen and (max-width: 561px){
+  .footer .footer__bottom p{
+    font-size: 8px;
+  }
+  
+}
+
+@media screen and (max-width: 490px){
+  .my_apps .down_section{
+    flex-direction: column;
+  }
+
+  .my_apps .down_section .right{
+    margin: 0%;
+    margin-bottom: 10px;
+  }
+  
+}
+
+/* *{
+  border: red 1px solid;
+} */
