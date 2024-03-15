@@ -4,6 +4,9 @@ import initBrands from "./../components/initBrands.js";
 import initWhatIsGpt from "./../components/initWhatIsGpt.js";
 import initFutureHere from "./../components/initFutureHere.js";
 import initBurger from "./../components/initBurger.js";
+import initMyApps from "../components/initMyApps.js";
+import initFooter from "../components/initFooter.js";
+import initBlog from "../components/initBlog.js";
 
 const initHomePage = (element) => {
   const template = `
@@ -12,6 +15,9 @@ const initHomePage = (element) => {
     <section class="section brands_section"></section>
     <section class="section what_is_chatgpt_section"></section>
     <section class="section future_here"></section>
+    <section class="section my_apps"></section>
+    <section class="section blog"></section>
+    <section class="section footer"></section>
   `;
 
   element.insertAdjacentHTML("beforeend", template);
@@ -42,7 +48,11 @@ const homePage = () => {
   // инициализация раздела "Будущее наступило" с мок датой
   initFutureHere();
 
-  
+  initMyApps(rootNode);
+
+  initBlog();
+
+  initFooter(rootNode);
 
   // инициализация бургера для адаптивного меню
   initBurger();

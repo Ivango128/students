@@ -15,7 +15,7 @@ export const rightContainerTemplate = ({ title, description }) => {
 
 export const futureHereTemplate = (data) => {
   // console.log(data);
-  const rightContainerTpl = data.map((item) => rightContainerTemplate(item));
+  const rightContainerTpl = data.map((item) => rightContainerTemplate(item)).join("");
 
   const parentTemplate = `
     <div class="future_here__left">
