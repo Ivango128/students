@@ -29,11 +29,7 @@ export const createUpSecMyAppsTemplate = ({
   return template;
 };
 
-export const createDownSecMyAppsTemplate = ({
-  title,
-  header,
-  button: { href, text },
-}) => {
+export const createDownSecMyAppsTemplate = ({title, header, button: { href, text },}) => {
   const template = `
     <div class="down_section">
         <div class="left">
