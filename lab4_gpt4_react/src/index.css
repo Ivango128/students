@@ -830,7 +830,7 @@ p {
 .beyond_expect .beyond_expect__right {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   padding: 0 0 2rem;
   gap: 1em;
 }
@@ -964,7 +964,7 @@ p {
 .footer .footer__bottom_right {
   display: flex;
   column-gap: 12rem;
-  justify-content: end;
+  justify-content: right;
   /* flex-basis: 68%; */
 }
 
